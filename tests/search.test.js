@@ -37,9 +37,9 @@ describe('Pruebas de regresión de búsqueda', function() {
             expect(pageTitle).to.include('Sxlenium');
 
         } catch (error) {
-            //console.error('Error durante la ejecución del test:', error);
-            //throw error; // Propagar el error para que la prueba falle
-            throw new Error(`Fallo controlado del test: ${err.message}`);
+             console.error('Error durante la ejecución del test:', error);
+             throw error; // Propagar el error para que la prueba falle
+        
         }
     });
 });
